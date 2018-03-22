@@ -1,0 +1,22 @@
+{
+    "name": "administrator/zxy_frame",
+    "description": "big big frame",
+    "type": "project",
+    "authors": [
+        {
+            "name": "zhoujun",
+            "email": "ztj1030@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "files":[
+            "system/helper.php"
+        ],
+        "psr-4":{
+            "test\\":"test",
+            "app\\":"app"
+        }
+    }
+
+}
