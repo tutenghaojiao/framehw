@@ -1,0 +1,28 @@
+{
+    "name": "wubin/0321-c91frame",
+    "description": "c91框架系统",
+    "type": "project",
+    "authors": [
+        {
+            "name": "wubin",
+            "email": "wubin.mail@foxmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "files":[
+            "system/helper.php"
+        ],
+        "psr-4":{
+            "houdunwang\\":"houdunwang",
+            "app\\":"app",
+            "system\\":"system"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
