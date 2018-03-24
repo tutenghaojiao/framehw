@@ -1,0 +1,24 @@
+{
+    "name": "ztj/bigframe",
+    "description": "big",
+    "type": "project",
+    "authors": [
+        {
+            "name": "tutenghaojiao",
+            "email": "473995726@qq.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.1"
+    },
+    "autoload":{
+        "files":[
+            "system/helper.php"
+        ],
+        "psr-4":{
+            "frame\\":"frame\\",
+            "app\\":"app\\",
+            "system\\":"system\\"
+        }
+    }
+}
