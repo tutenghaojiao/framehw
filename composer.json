@@ -1,0 +1,13 @@
+{
+    "name": "ztj/frame",
+    "description": "big big",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tutenghaojiao",
+            "email": "473995726@qq.com"
+        }
+    ],
+    "require": {}
+}
