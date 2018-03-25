@@ -9,5 +9,17 @@
             "email": "473995726@qq.com"
         }
     ],
-    "require": {}
+    "require": {
+        "filp/whoops": "^2.1"
+    },
+    "autoload":{
+        "files":[
+          "system/helper.php"
+        ],
+        "psr-4":{
+            "app\\":"app",
+            "frames\\":"frames",
+            "system\\":"system"
+        }
+    }
 }
