@@ -45,10 +45,10 @@ public function index(){
 			//	$res=c ();
 			//	$res=c ('database');
 				$res=c ('database.host');
-				//p ($res);die();
+				p ($res);die();
 			//4、把变动的配置项元素给放到相应的文件中;
 				$data=Model::query('select name from stu');
-				//p ($data);
+				p ($data);
 				//p (date ('Y-m-d H:i:s',time ()));//时区测试
 
 
