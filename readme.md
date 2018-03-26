@@ -11,14 +11,23 @@
                 ｜—view                  视图
             
             
-            ｜—admin                     后台文件目录            
+            ｜—admin                     后台文件目录     
+                ｜—controller            控制器类
+                ｜—view                  视图       
             
 ####       2、frames             框架核心资源文件    
            ｜—core                       核心框架
+               ｜—Controller.php         控制器类
+               ｜—Boot.php               视图   
            
-           ｜—model                      模块    
+           ｜—model                      模块  
+               ｜—Base.php               控制器类
+               ｜—Model.php              视图     
             
-           ｜—view                       视图层     
+           ｜—view                       视图层  
+               ｜—Base.php               控制器类
+               ｜—View.php               视图     
+                          
            
 ####      3、public             公共支持
           ｜—view                        模板文件目录、静态资源

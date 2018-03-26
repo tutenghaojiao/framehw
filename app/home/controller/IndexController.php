@@ -44,7 +44,7 @@ public function index(){
 			//	创建C函数，通过传递参数来获取相应的配置项文件里面的数据
 			//	$res=c ();
 			//	$res=c ('database');
-			//	$res=c ('database.host');
+				$res=c ('database.host');
 				//p ($res);die();
 			//4、把变动的配置项元素给放到相应的文件中;
 				$data=Model::query('select name from stu');

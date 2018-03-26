@@ -49,6 +49,13 @@ class Base
 		}
 	}
 
+	/**
+	 * 无结果集查询
+	 * @param $sql
+	 *
+	 * @return int
+	 * @throws Exception
+	 */
 	public function exec ( $sql )
 	{
 		//p ($sql);//sql更新语句
