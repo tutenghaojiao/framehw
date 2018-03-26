@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInite6cb0fe9fe27c4e1487b79d2bec1aa6f
 {
     public static $files = array (
-        'fedcf4eb00736fac6bad6d58e8a48c04' => __DIR__ . '/../..' . '/system/helper.php',
+        'ca1c4fc5e004aafcf42a3c1d2c912b9e' => __DIR__ . '/../..' . '/system/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -27,9 +27,17 @@ class ComposerStaticInite6cb0fe9fe27c4e1487b79d2bec1aa6f
         array (
             'Whoops\\' => 7,
         ),
+        'S' => 
+        array (
+            'Symfony\\Component\\Finder\\' => 25,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+        ),
+        'G' => 
+        array (
+            'Gregwar\\' => 8,
         ),
     );
 
@@ -50,9 +58,17 @@ class ComposerStaticInite6cb0fe9fe27c4e1487b79d2bec1aa6f
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Gregwar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
         ),
     );
 

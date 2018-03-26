@@ -27,11 +27,11 @@ class Controller
 		//引入模版参考单一入口文件
 		include "./view/message.php";
 	}
-	public function welcome($msg=''){
-			//p($msg);
-		//引入模版参考单一入口文件
-		include "./view/welcome.php";
-	}
+	//public function welcome($msg=''){
+	//		//p($msg);
+	//	//引入模版参考单一入口文件
+	//	include "./view/welcome.php";
+	//}
 
 	/**
 	 * 设置重定向

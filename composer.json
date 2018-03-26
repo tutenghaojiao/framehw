@@ -1,6 +1,6 @@
 {
-    "name": "administrator/framehw",
-    "description": "i im big frame",
+    "name": "ztj/frames",
+    "description": "'i im big frame'",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -10,16 +10,23 @@
         }
     ],
     "require": {
-        "filp/whoops": "^2.1"
+        "filp/whoops": "^2.1",
+        "gregwar/captcha": "^1.1"
     },
     "autoload":{
         "files":[
-          "system/helper.php"
+            "system/helper.php"
         ],
         "psr-4":{
             "app\\":"app",
             "frames\\":"frames",
             "system\\":"system"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
         }
     }
 }

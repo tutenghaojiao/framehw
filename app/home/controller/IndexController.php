@@ -16,6 +16,10 @@ use frames\view\View;
 class IndexController extends Controller
 {
 public function index(){
+	//默认加载欢迎页面
+
+	//return View::make();//默认加载欢迎界面
+
 //echo 1 //错误提示设置成功
 //	echo '我是app\home\controller里面的 index 方法';//OK
 //parent::ceshi ();//OK
@@ -44,11 +48,11 @@ public function index(){
 			//	创建C函数，通过传递参数来获取相应的配置项文件里面的数据
 			//	$res=c ();
 			//	$res=c ('database');
-				$res=c ('database.host');
-				p ($res);die();
+			//	$res=c ('database.host');
+			//	p ($res);die();
 			//4、把变动的配置项元素给放到相应的文件中;
-				$data=Model::query('select name from stu');
-				p ($data);
+			//	$data=Model::query('select name from stu');
+			//	p ($data);
 				//p (date ('Y-m-d H:i:s',time ()));//时区测试
 
 

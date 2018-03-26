@@ -12,7 +12,7 @@ namespace frames\view;
 class Base
 {
 	private static $files;//模板文件
-	private static $data;//数据加载
+	private static $data=[];//数据加载
 	/**
 	 * 加载模板
 	 * @param string $tpl  模板文件名称
@@ -29,7 +29,7 @@ public function make($tpl=''){
 //p (ACTION);
 //p (is_bool($tpl));//bool(false)
 $tpl=$tpl? :ACTION;
-	self::$files='../app/'.MODLE.'/view/'.CONTROLLER.'/'.$tpl.'.php';
+	self::$files='../app/'.MODLE.'/view/'.CONTROLLER.'/'.$tpl.'.'.c ('view.suffix');
 	//p (self::$files);
 	//include self::$files;
 	//./app/home/view/article/index.php
@@ -42,6 +42,7 @@ $tpl=$tpl? :ACTION;
  * 分配变量
  */
 public function with($para=[]){
+
 	//echo '测试是否连接';//OK
 	//p ($para);//关联数组
 	//p (extract ($para));//2条数据被处理
@@ -57,11 +58,14 @@ public function with($para=[]){
  */
 public function __toString ()
 {
+
 	//echo '测试';die();// app\home\controller\IndexController\index
 	extract (self::$data);
+
 	if (!is_null (self::$files)){
 		include self::$files;
 	}
+
 
 
 	return'';

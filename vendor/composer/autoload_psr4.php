@@ -10,5 +10,7 @@ return array(
     'frames\\' => array($baseDir . '/frames'),
     'app\\' => array($baseDir . '/app'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Gregwar\\' => array($vendorDir . '/gregwar/captcha/src/Gregwar'),
 );
