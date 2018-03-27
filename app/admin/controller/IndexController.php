@@ -12,13 +12,12 @@ namespace app\admin\controller;
 
 use frames\view\View;
 
-class IndexConctroller extends CommonController
+class IndexController extends CommonController
 {
 	/**
-	 * 后台首页
+	 * 后台登录成功后显示的欢迎页面
 	 */
 	public function index(){
-		echo 11;
-		//return View::make();
+		return View::make();
 	}
 }

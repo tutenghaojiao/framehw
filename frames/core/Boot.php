@@ -69,7 +69,7 @@ if (isset($_GET['s'])){
 	$c=ucfirst ($info[1]);//Index,类名
 	$a=$info[2];//index,方法名
 }else{
-	$m='home';
+	$m='admin';
 	$c='index';
 	$a='index';
 }

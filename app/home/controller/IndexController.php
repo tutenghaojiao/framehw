@@ -12,6 +12,9 @@ namespace app\home\controller;
 use frames\core\Controller;
 use frames\model\Model;
 use frames\view\View;
+use system\model\Admin;
+use system\model\Grade;
+use system\model\Student;
 
 class IndexController extends Controller
 {
@@ -19,6 +22,11 @@ public function index(){
 	//默认加载欢迎页面
 
 	//return View::make();//默认加载欢迎界面
+
+	$GradeData=Grade::get();//拿到班级表里面的信息
+	//p($GradeData);die();
+	return View::with(compact ('GradeData'))->make();//分配班级数据到页面
+
 
 //echo 1 //错误提示设置成功
 //	echo '我是app\home\controller里面的 index 方法';//OK
@@ -51,13 +59,11 @@ public function index(){
 			//	$res=c ('database.host');
 			//	p ($res);die();
 			//4、把变动的配置项元素给放到相应的文件中;
-			//	$data=Model::query('select name from stu');
-			//	p ($data);
+			//	$data=Model::query('select * from grade');
+				//p ($data);die();
 				//p (date ('Y-m-d H:i:s',time ()));//时区测试
 
-
-
-
+			//p (Model::first());
 }
 
 public  function add(){
@@ -67,9 +73,22 @@ public  function add(){
 	//链式操作需要保证:每一节都是对象
 	//$this->reDrict ('?s=admin/index/add')->message ('修改版');
 	//$this->welcome ('恭喜你Congratulation!!!');
+}
 
 
+public function  welcome(){
+	return View::make();//默认加载欢迎界面
+}
 
+public function student(){
+	//echo 111;die();//加载到了这个方法OK
+	$gid=$_GET['id'];//获得地址栏id当作下标（实际找的的是班级对应得id编号）
+	$StudentData=Student::where('g_id='.$gid)->get();//查找对应班级得数据
+	$GradeData=current (Grade::field('g_name')->where('g_id='.$gid)->get());//获得对应班级的名字
+	//$GradeData;
+	//p($GradeData);die();
+	//p ($StudentData);die();//OK
+	return View::with(compact ('StudentData','GradeData'))->make();//把获得得数据分配到页面
 
 }
 }

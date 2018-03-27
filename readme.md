@@ -44,6 +44,32 @@
             
           ｜—helper.php                  助手函数文件
 
+————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————
+#                                  后台操作流程：
+
+1.          创建班级数据库frame
+
+2.          后台管理员表
+create table admin(
+a_id    int primary key auto_increment,
+a_name   char(16) unique not null default '',
+a_psw    varchar(100) not null default''
+);
+3.          班级表
+create table grade(
+g_id     int primary key auto_increment,
+g_name   char(16) unique not null default ''
+);
+
+4.          学生表      
+create table student(
+s_id     int primary key auto_increment,
+s_name   char(16) unique not null default '',
+s_sex    enum('男','女') not null default '男',
+s_age    tinyint(5) unsigned not null default 0,
+g_id    int unsigned not null default 1
+);
 
 
         

@@ -18,10 +18,11 @@ class Base
 	 * @param string $tpl  模板文件名称
 	 */
 public function make($tpl=''){
+
 	//echo 'frames\view frames\view make加载模板';//OK
 	//include "./view/welcome.php";//OK 加载成功
 	//self::$files=include "./view/welcome.php";
-	//p ($tpl);//文件名
+	//p ($tpl);die();//文件名
 
 	//拼装模板文件路径
 //p (MODLE);
@@ -45,7 +46,7 @@ public function with($para=[]){
 
 	//echo '测试是否连接';//OK
 	//p ($para);//关联数组
-	//p (extract ($para));//2条数据被处理
+	extract ($para);//2条数据被处理
 	//p ($data);
 	//p ($test);
 	self::$data=$para;
@@ -65,11 +66,7 @@ public function __toString ()
 	if (!is_null (self::$files)){
 		include self::$files;
 	}
-
-
-
 	return'';
-
 }
 
 

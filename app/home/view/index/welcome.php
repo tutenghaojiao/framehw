@@ -18,8 +18,6 @@
 	<title>恭喜您</title>
 </head>
 <body>
-<?php p($data)?>
-<?php p($test)?>
 
 <div class="jumbotron" style="background: #ffffff;margin: 100px;text-align: center">
 	<div class="container">

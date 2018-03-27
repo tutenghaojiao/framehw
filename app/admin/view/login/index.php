@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>c91学生管理后台登录</title>
+    <title>后台登录</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -20,13 +20,13 @@
                <div class="form-group">
                    <label for="" class="col-sm-2 control-label">用户名</label>
                    <div class="col-sm-10">
-                       <input type="text" required name="admin_username" class="form-control" id="" placeholder="">
+                       <input type="text" required name="a_name" class="form-control" id="" placeholder="">
                    </div>
                </div>
                <div class="form-group">
                    <label for="" class="col-sm-2 control-label">密码</label>
                    <div class="col-sm-10">
-                       <input type="password" required name="admin_password" class="form-control" id="" placeholder="">
+                       <input type="password" required name="a_psw" class="form-control" id="" placeholder="">
                    </div>
                </div>
                <div class="form-group">
@@ -36,8 +36,9 @@
                            <input type="text" required name="captcha" class="form-control" id="" placeholder="">
                        </div>
                        <div class="col-sm-4">
+                    <!-- 加载验证码-->
                            <img onclick="this.src=this.src+'&rand='+Math.random()" src="?s=admin/login/captcha" alt="">
-                       </div>
+                   </div>
                    </div>
                </div>
                <div class="form-group">

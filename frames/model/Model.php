@@ -24,7 +24,8 @@ class Model
 
 	private static function parse ( $name , $arguments )
 	{
-		return	call_user_func_array ([new Base(),$name],$arguments);
+		$ClassName=get_called_class ();
+		return	call_user_func_array ([new Base($ClassName),$name],$arguments);
 	}
 
 }

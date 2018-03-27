@@ -16,6 +16,10 @@ class CommonController extends Controller
 	public function __construct ()
 	{
 		//登录验证
-		//if (isset($_))
+		if (!isset($_SESSION['a_name'])){//如果么有用户名，那么就调到登录页面
+			$this->reDrict ('?s=admin/login/index')->message ('请登录');
+			exit();
+
+		}
 	}
 }

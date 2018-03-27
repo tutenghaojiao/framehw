@@ -27,13 +27,13 @@
             <form action="" method="POST" class="form-horizontal" role="form">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">欢迎页面</h3>
+                        <h3 class="panel-title">添加班级</h3>
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">班级名称</label>
                             <div class="col-sm-10">
-                                <input type="text" required class="form-control" name="gname" id="" placeholder="">
+                                <input type="text" required class="form-control" name="g_name" id="" placeholder="">
                             </div>
                         </div>
                     </div>

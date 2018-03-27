@@ -26,7 +26,7 @@
             <div class="col-xs-9">
                 <div class="panel panel-default">
                 	  <div class="panel-heading">
-                			<h3 class="panel-title">欢迎页面</h3>
+                			<h3 class="panel-title" style="text-align: center">后台简介</h3>
                 	  </div>
                 	  <div class="panel-body">
                           <table class="table table-hover">
@@ -47,11 +47,11 @@
                               </tr>
                               <tr>
                                   <td>开发者</td>
-                                  <td>超人</td>
+                                  <td>周天君</td>
                               </tr>
                               <tr>
                                   <td>联系我</td>
-                                  <td>wubin.mail@foxmail.com</td>
+                                  <td>ztj@foxmail.com</td>
                               </tr>
                               </tbody>
                           </table>

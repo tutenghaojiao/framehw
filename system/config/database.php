@@ -8,7 +8,7 @@
 
 return[
 	"host"=>"127.0.0.1",									//主机地址
-	"dbname"=>"hw",										//数据库名称
+	"dbname"=>"frame",										//数据库名称
 	"user"=>"root",										//用户名
 	"password"=>"root",									//登录密码
 	"header"=>"Content-type:text/html;charset=utf8",	//文件编码声明
