@@ -51,8 +51,8 @@
            </form>
         </div>
     </div>
-<div style="width: 100%;text-align: center;margin-top: 100px">
-    copyright@2018 超人 版权所有
+<div style="width: 100%;text-align: center;margin-top: 100px;font-size: 25px">
+    copyright@2018 ZTJ 版权所有
 </div>
 </body>
 </html>

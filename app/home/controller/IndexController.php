@@ -80,12 +80,18 @@ public function  welcome(){
 	return View::make();//默认加载欢迎界面
 }
 
+	/**
+	 *
+	 *首页学生表展示页面
+	 * @return mixed
+	 *
+	 */
 public function student(){
 	//echo 111;die();//加载到了这个方法OK
 	$gid=$_GET['id'];//获得地址栏id当作下标（实际找的的是班级对应得id编号）
 	$StudentData=Student::where('g_id='.$gid)->get();//查找对应班级得数据
-	$GradeData=current (Grade::field('g_name')->where('g_id='.$gid)->get());//获得对应班级的名字
-	//$GradeData;
+	//$GradeData=current (Grade::field('g_name')->where('g_id='.$gid)->get());//获得对应班级的名字
+	$GradeData=current (Grade::field('g_name')->find($gid));//获得对应班级的名字
 	//p($GradeData);die();
 	//p ($StudentData);die();//OK
 	return View::with(compact ('StudentData','GradeData'))->make();//把获得得数据分配到页面

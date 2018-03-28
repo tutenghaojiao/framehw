@@ -16,6 +16,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">班级列表</h3>
+                    <a href="?s=admin/index/index" style="float: right;margin-top:-27px;" class="btn btn-primary panel-title">后台登录</a>
                 </div>
                 <div class="panel-body">
                     <table class="table table-hover">

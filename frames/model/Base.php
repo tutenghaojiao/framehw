@@ -164,7 +164,7 @@ class Base
 	{
 		//p ($pri);//为传的参数，
 		$id  = $this->getPriField ();//调用主键名
-		$sql = 'select * from ' . $this->table . ' where ' . $id . '=' . $pri;
+		$sql = 'select '.$this->field.' from ' . $this->table . ' where ' . $id . '=' . $pri;
 
 		//因为每次运行的时候都是查找的单一一条数据，所以可以把他转成一个一维数组
 		return current ( $this->query ( $sql ) );

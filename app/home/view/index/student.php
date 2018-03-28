@@ -15,8 +15,15 @@
         <div class="col-xs-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">班级对应的学生</h3>
+                    <h3 class="panel-title">
+                        【<?php echo $GradeData ;?>】班级对应的学生
+                        <div class="btn-group btn-group-xs" style="float: right;">
+                            <a href="?s=home/index/index" type="button" class="btn btn-primary">返回主页</a>
+                        </div>
+                    </h3>
+
                 </div>
+
                 <div class="panel-body">
                     <table class="table table-hover">
                         <thead>
@@ -26,11 +33,7 @@
                             <th>学生性别</th>
                             <th>学生年龄</th>
                             <th>学生班级</th>
-                            <td>
-                                <div class="btn-group btn-group-xs">
-                                    <a href="?s=home/index/index" type="button" class="btn btn-primary">返回主页</a>
-                                </div>
-                            </td>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -40,7 +43,7 @@
                             <td><?php echo $v['s_name'] ;?></td>
                             <td><?php echo $v['s_sex'] ;?></td>
                             <td><?php echo $v['s_age'] ;?></td>
-                            <td><?php echo $GradeData['g_name'] ;?></td>
+                            <td><?php echo $GradeData;?></td>
                         </tr>
                         <?php }?>
                         </tbody>
