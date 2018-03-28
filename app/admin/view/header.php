@@ -7,7 +7,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="?s=home/index/index">Home</a>
+		<a class="navbar-brand" href="?s=home/index/index" style="background: black;color: red;border-radius: 20px 20px;font-weight: bold">返回前台首页</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->

@@ -18,8 +18,14 @@ use system\model\Student;
 
 class IndexController extends Controller
 {
+
+
+
+
+
 public function index(){
-	//默认加载欢迎页面
+
+
 
 	//return View::make();//默认加载欢迎界面
 

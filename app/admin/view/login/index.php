@@ -15,7 +15,12 @@
         <div class="row" style="width: 60%;margin:100px auto">
            <form action="" method="POST" class="form-horizontal" role="form">
                <div class="form-group">
-                   <legend>登录页面</legend>
+
+                   <legend>     
+                       <a href="?s=home/index/index" style="margin-top:-15px;" class="btn btn-primary ">返回首页</a>
+                       <span style="float: right;margin-top:-7px;" class="btn btn-primary " >登录页面</span>
+                   </legend>
+
                </div>
                <div class="form-group">
                    <label for="" class="col-sm-2 control-label">用户名</label>
