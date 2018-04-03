@@ -50,7 +50,7 @@
                           			<td><?php echo $v['s_name']?></td>
                           			<td><?php echo $v['s_sex']?></td>
                           			<td><?php echo $v['s_age']?></td>
-                          			<td><?php echo $v['g_id']?></td>
+                                    <td><?php echo  $v['s_id']?></td>
                           			<td>
                                         <div class="btn-group btn-group-xs">
                                             <a href="?s=admin/student/edit&gid=<?php echo $v['s_id']?>" class="btn btn-primary">编辑</a>

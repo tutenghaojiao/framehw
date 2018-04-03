@@ -14,6 +14,9 @@ use app\home\controller\IndexController;
 
 class Boot
 {
+	/**
+	 *执行应用类
+	 */
 public static  function run(){
 	//错误提示
 	self::handler ();
@@ -22,11 +25,10 @@ public static  function run(){
 	self::init ();//初始化
 	//p(date ('Y-m-d H:i:s',time ()));//时区测试OK
 	self::appRun();//执行应用
-
 }
 
 	/**
-	 * 错误信息提示设置
+	 * 2、错误信息提示设置
 	 */
 	private static function handler(){
 		$whoops = new \Whoops\Run;
@@ -68,8 +70,8 @@ if (isset($_GET['s'])){
 	$m=$info[0];//home,模块目录名
 	$c=ucfirst ($info[1]);//Index,类名
 	$a=$info[2];//index,方法名
-}else{
-	$m='admin';
+}else{//默认加载模板
+	$m='home';
 	$c='index';
 	$a='index';
 }

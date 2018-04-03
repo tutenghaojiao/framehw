@@ -19,23 +19,24 @@ class Base
 	 */
 public function make($tpl=''){
 
-	//echo 'frames\view frames\view make加载模板';//OK
-	//include "./view/welcome.php";//OK 加载成功
-	//self::$files=include "./view/welcome.php";
-	//p ($tpl);die();//文件名
+		//echo 'frames\view frames\view make加载模板';//OK
+		//include "./view/welcome.php";die();//OK 加载成功
+		//self::$files=include "./view/welcome.php";
+		//p ($tpl);die();//文件名
 
 	//拼装模板文件路径
-//p (MODLE);
-//p (CONTROLLER);
-//p (ACTION);
-//p (is_bool($tpl));//bool(false)
-$tpl=$tpl? :ACTION;
+		//p (MODLE);
+		//p (CONTROLLER);
+		//p (ACTION);
+		//p (is_bool($tpl));//bool(false)
+		$tpl=$tpl? :ACTION;
+		//p($tpl);
 	self::$files='../app/'.MODLE.'/view/'.CONTROLLER.'/'.$tpl.'.'.c ('view.suffix');
-	//p (self::$files);
-	//include self::$files;
-	//./app/home/view/article/index.php
-	//./app/home/view/index/index.php
-	//./app/admin/view/index/index.php
+		//p (self::$files);
+		//include self::$files;//加载模板
+		//./app/home/view/article/index.php
+		//./app/home/view/index/index.php
+		//./app/admin/view/index/index.php
 	return $this;
 }
 
@@ -45,9 +46,9 @@ $tpl=$tpl? :ACTION;
 public function with($para=[]){
 
 	//echo '测试是否连接';//OK
-	//p ($para);//关联数组
+	//p ($para);die();//关联数组
 	extract ($para);//2条数据被处理
-	//p ($data);
+	//p ($data);die();
 	//p ($test);
 	self::$data=$para;
 	return $this;
@@ -62,7 +63,6 @@ public function __toString ()
 
 	//echo '测试';die();// app\home\controller\IndexController\index
 	extract (self::$data);
-
 	if (!is_null (self::$files)){
 		include self::$files;
 	}

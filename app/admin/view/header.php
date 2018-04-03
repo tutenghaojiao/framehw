@@ -13,7 +13,7 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav navbar-right">
-            <span style="float: left;margin:15px auto">用户名：</span><li><a href="javascript:;"><?php echo  $_SESSION['a_name'] ;?></a></li>
+            <span style="float: left;margin:15px auto">用户名：</span><li><a href="javascript:;" style="color: red;font-size: 25px"><?php echo  $_SESSION['a_name'] ;?></a></li>
 			<li><a href="?s=admin/login/out">退出</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->

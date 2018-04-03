@@ -20,9 +20,9 @@ class StudentController extends CommonController
 	 * @return mixed
 	 */
 	public function index(){
+		//p ($id);die();
 		//p (1111);die();//正常加载;
 		$data = Student::orderBy('s_id desc')->get();//获取整个表得数据
-		//p ($data);die();//OK
 		return View::with(compact ('data'))->make();
 	}
 

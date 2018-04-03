@@ -31,7 +31,7 @@ function c($var=null){
 	if (is_null ($var)){
 
 		$files=glob ('../system/config/*');
-		//p ($files);//获得数组
+		//p ($files);die();//获得数组,元素是两个配置文件的完整路径
 		$data=[];//声明一个空数组来接配置项里面的所有数据
 
 		foreach ( $files as $file ) {

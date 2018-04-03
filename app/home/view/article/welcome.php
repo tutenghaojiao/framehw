@@ -21,8 +21,8 @@
 <div class="jumbotron" style="background: #ffffff;margin: 100px;text-align: center">
 	<div class="container">
 
-		<h1>恭喜你Congratulation!!!</h1>
-		<p>恭喜你成功创建了应用类文件...............</p>
+		<h1><?php echo $data[0];?></h1>
+		<p><?php echo $data[1];?></p>
 
 	</div>
 </div>

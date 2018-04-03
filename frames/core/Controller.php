@@ -12,10 +12,10 @@ namespace frames\core;
 class Controller
 {
 	private $url;//跳转地址
-	//正常连接到这个类
-//public function ceshi(){
-//	echo '我是frames\core Controller测试方法ceshi';
-//}
+		//正常连接到这个类(测试成功)
+		//public function ceshi(){
+		//	echo '我是frames\core Controller测试方法ceshi';
+		//}
 
 	/**
 	 * 加载信息模板

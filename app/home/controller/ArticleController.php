@@ -15,8 +15,10 @@ class ArticleController
 {
 	public function index(){
 		//echo '我是app\home\controller里面ArticleController的index方法';//OK
+		$data=['恭喜你Congratulation','恭喜你成功创建了应用类文件...'];
 
-		(new View())->make('welcome');
+		//return View::make('index')->with(compact ('data'));//需要一个返回值
+		return View::make('welcome')->with(compact ('data'));//需要一个返回值
 	}
 	public function edit(){
 		//echo '我是app\home\controller里面类ArticleController的 edit 方法';//OK

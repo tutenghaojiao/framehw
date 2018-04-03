@@ -18,6 +18,7 @@ class IndexController extends CommonController
 	 * 后台登录成功后显示的欢迎页面
 	 */
 	public function index(){
+
 		return View::make();
 	}
 }

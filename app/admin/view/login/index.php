@@ -46,6 +46,17 @@
                    </div>
                    </div>
                </div>
+               <!--记住密码（7天登录）-->
+               <div class="form-group">
+                   <div class="col-sm-offset-2 col-sm-10">
+                       <div class="checkbox">
+                           <label>
+                               <!--增加一个name名，或者不增加，默认勾选之后为on-->
+                               <input type="checkbox" name="auto"> 记住密码7天
+                           </label>
+                       </div>
+                   </div>
+               </div>
                <div class="form-group">
                    <label for="" class="col-sm-2 control-label"></label>
                    <div class="col-sm-10">
